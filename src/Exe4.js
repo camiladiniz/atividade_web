@@ -4,15 +4,16 @@
  * @param {Array} vetor 
  * @return {Number} o menor valor.
  */
+
 function acharMenor(vetor) {
-    let vetorLen;
-    vetorLen = vetor.length;
-    let menor = NaN
-    for (i = 0; i < vetorLen; i++) {
-        if (i < menor) {
-            menor = i
+    let len = vetor.length;
+    let menor = vetor[0] 
+    for (let i=0; i< len; i++) {
+        if ( vetor[i] < menor) {
+            menor = vetor[i];
         }
     }
+    return menor
 }
 
 /**
